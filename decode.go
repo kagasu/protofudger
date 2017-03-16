@@ -186,9 +186,9 @@ func decode(input []byte, offset int64, depth int, showAll, showOffsets bool) (i
 			if l < 0 {
 				return n, a, fmt.Errorf("invalid length %d", l)
 			}
-			if l > 1024*32 {
+			/*if l > 1024*32 {
 				return n, a, fmt.Errorf("probably invalid length %d", l)
-			}
+			}*/
 
 			o, err = r.Seek(0, os.SEEK_CUR)
 			if err != nil {
