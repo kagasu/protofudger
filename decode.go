@@ -315,7 +315,7 @@ func decode(input []byte, offset int64, depth int, showAll, showOffsets bool) (i
 
 func parseBuffer(d []byte, showAll, showOffsets bool) ([]string, error) {
 	n, lines, err := decode(d, 0, 0, showAll, showOffsets)
-	if n > 0 && err == nil {
+	if n > 0 == nil {
 		return append([]string{
 			fmt.Sprintf("decoded %d fields", n),
 			"",
